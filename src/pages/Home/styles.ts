@@ -1,5 +1,14 @@
 import styled from 'styled-components'
 
+export const HomeContainer = styled.div`
+  max-width: 70rem;
+  margin: 0 auto;
+
+  .coffes {
+    margin-bottom: 54px;
+  }
+`
+
 export const MainContainer = styled.main`
   max-width: 70rem;
   margin: 5.75rem auto;
@@ -60,4 +69,12 @@ export const InfoCoffes = styled.span<StatusProps>`
   border-radius: 50%;
   color: ${(props) => props.theme.white};
   background: ${(props) => props.theme[STATUS_COLORS[props.statusColor]]};
+`
+
+export const ListCoffes = styled.div`
+  max-width: 70rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
 `
