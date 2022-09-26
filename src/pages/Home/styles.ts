@@ -12,6 +12,7 @@ export const HomeContainer = styled.div`
 export const MainContainer = styled.main`
   max-width: 70rem;
   margin: 5.75rem auto;
+  padding: 0 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;

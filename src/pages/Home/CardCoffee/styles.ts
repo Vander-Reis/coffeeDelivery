@@ -64,6 +64,7 @@ export const BuyCoffee = styled.div`
     font-weight: 800;
     font-size: 24px;
     line-height: 130%;
+    margin-right: 1rem;
 
     small {
       font-family: 'Roboto';

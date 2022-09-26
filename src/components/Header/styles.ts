@@ -32,6 +32,7 @@ export const CartConteiner = styled.button`
   background: ${(props) => props.theme['yellow-100']};
   color: ${(props) => props.theme['yellow-300']};
   position: relative;
+  cursor: pointer;
 
   span {
     width: 1.25rem;

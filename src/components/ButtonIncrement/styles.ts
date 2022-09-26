@@ -10,7 +10,7 @@ export const ButtonContainer = styled.div`
   padding: 0.5rem 0.35rem;
   border-radius: 6px;
   background: ${(props) => props.theme['gray-300']};
-  margin-left: 0.94rem;
+  /* margin-left: 0.94rem; */
 
   button {
     border: none;
