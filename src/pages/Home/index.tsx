@@ -61,8 +61,8 @@ export function Home() {
 
       <h1 className="coffes">Nossos cafés</h1>
       <ListCoffes>
-        {coffes.map((cofe) => {
-          return <CardCoffe key={cofe.id} coffee={cofe} />
+        {coffes.map((itens) => {
+          return <CardCoffe key={itens.id} coffees={itens} />
         })}
       </ListCoffes>
     </HomeContainer>

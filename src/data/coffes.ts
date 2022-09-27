@@ -15,7 +15,7 @@ import irlandes from '../assets/irlandes.png'
 
 export const coffes = [
   {
-    id: '1',
+    id: 1,
     image: tradicional,
     tags: ['Tradicional'],
     title: 'Expresso Tradicional',
@@ -23,7 +23,7 @@ export const coffes = [
     price: 9.9,
   },
   {
-    id: '2',
+    id: 2,
     image: americano,
     tags: ['Tradicional'],
     title: 'Expresso Americano',
@@ -31,7 +31,7 @@ export const coffes = [
     price: 9.9,
   },
   {
-    id: '3',
+    id: 3,
     image: cremoso,
     tags: ['Tradicional'],
     title: 'Expresso Cremoso',
@@ -39,7 +39,7 @@ export const coffes = [
     price: 9.9,
   },
   {
-    id: '4',
+    id: 4,
     image: gelado,
     tags: ['Tradicional'],
     title: 'Expresso Gelado',
@@ -47,7 +47,7 @@ export const coffes = [
     price: 9.9,
   },
   {
-    id: '5',
+    id: 5,
     image: leite,
     tags: ['Tradicional', 'com leite'],
     title: 'Café com Leite',
@@ -55,7 +55,7 @@ export const coffes = [
     price: 9.9,
   },
   {
-    id: '6',
+    id: 6,
     image: latte,
     tags: ['Tradicional', 'com leite'],
     title: 'Latte',
@@ -63,7 +63,7 @@ export const coffes = [
     price: 9.9,
   },
   {
-    id: '7',
+    id: 7,
     image: capuccino,
     tags: ['Tradicional', 'com leite'],
     title: 'Capuccino',
@@ -71,7 +71,7 @@ export const coffes = [
     price: 9.9,
   },
   {
-    id: '8',
+    id: 8,
     image: macchiato,
     tags: ['Tradicional', 'com leite'],
     title: 'Macchiato',
@@ -79,7 +79,7 @@ export const coffes = [
     price: 9.9,
   },
   {
-    id: '9',
+    id: 9,
     image: mocaccino,
     tags: ['Tradicional', 'com leite'],
     title: 'Mocaccino',
@@ -87,7 +87,7 @@ export const coffes = [
     price: 9.9,
   },
   {
-    id: '10',
+    id: 10,
     image: chocolate,
     tags: ['Especial', 'com leite'],
     title: 'Chocolate',
@@ -95,7 +95,7 @@ export const coffes = [
     price: 9.9,
   },
   {
-    id: '11',
+    id: 11,
     image: cubano,
     tags: ['Especial', 'Alcoólico', 'Gelado'],
     title: 'Cubano',
@@ -103,7 +103,7 @@ export const coffes = [
     price: 9.9,
   },
   {
-    id: '12',
+    id: 12,
     image: havaiano,
     tags: ['Especial'],
     title: 'Havaiano',
@@ -111,7 +111,7 @@ export const coffes = [
     price: 9.9,
   },
   {
-    id: '13',
+    id: 13,
     image: arabe,
     tags: ['Especial'],
     title: 'Árabe',
@@ -119,7 +119,7 @@ export const coffes = [
     price: 9.9,
   },
   {
-    id: '14',
+    id: 14,
     image: irlandes,
     tags: ['Especial', 'Alcoólico'],
     title: 'Irlandês',

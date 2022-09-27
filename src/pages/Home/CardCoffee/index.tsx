@@ -3,7 +3,7 @@ import { CoffeContainer, TagsContent, BuyCoffee } from './styles'
 import { ButtonIncrement } from '../../../components/ButtonIncrement'
 import { useContext, useState } from 'react'
 import { CartContext } from '../../../context/CartContex'
-export interface CoffeeCardProps {
+export interface Coffee {
   id: number
   image: string
   tags: string[]
@@ -11,11 +11,12 @@ export interface CoffeeCardProps {
   about: string
   price: number
 }
+
 interface CoffeeProps {
-  coffee: CoffeeCardProps
+  coffees: Coffee
 }
 
-export function CardCoffe({ coffee }: CoffeeProps) {
+export function CardCoffe({ coffees }: CoffeeProps) {
   const { addCoffeeToCart } = useContext(CartContext)
   const [quantity, setQuantity] = useState(1)
 
@@ -32,7 +33,7 @@ export function CardCoffe({ coffee }: CoffeeProps) {
   }
 
   function handleAddItemCart() {
-    const coffeeAdd = { ...coffee, quantity }
+    const coffeeAdd = { ...coffees, quantity }
 
     addCoffeeToCart(coffeeAdd)
   }
@@ -40,19 +41,19 @@ export function CardCoffe({ coffee }: CoffeeProps) {
   return (
     <CoffeContainer>
       <div>
-        <img src={coffee.image} alt="" />
+        <img src={coffees.image} alt="" />
         <div>
-          {coffee.tags.map((tag) => {
+          {coffees.tags.map((tag) => {
             return <TagsContent key={tag}>{tag}</TagsContent>
           })}
         </div>
-        <h2>{coffee.title}</h2>
-        <p>{coffee.about}</p>
+        <h2>{coffees.title}</h2>
+        <p>{coffees.about}</p>
 
         <BuyCoffee>
           <span>
             <small>R$ </small>
-            {String(coffee.price).padEnd(4, '0')}
+            {String(coffees.price).padEnd(4, '0')}
           </span>
           <div>
             <ButtonIncrement
