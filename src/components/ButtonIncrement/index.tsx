@@ -14,11 +14,11 @@ export function ButtonIncrement({
 }: ButtonIncrementProps) {
   return (
     <ButtonContainer>
-      <button onClick={decrement}>
+      <button onClick={decrement} type="button">
         <Minus />
       </button>
       <span>{quantity}</span>
-      <button onClick={increment}>
+      <button onClick={increment} type="button">
         <Plus />
       </button>
     </ButtonContainer>

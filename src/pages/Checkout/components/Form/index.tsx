@@ -1,4 +1,5 @@
 import { MapPinLine } from 'phosphor-react'
+import { InputForm } from '../InputForm'
 
 import { FormContainer } from './styles'
 export function Form() {
@@ -11,6 +12,7 @@ export function Form() {
           <p>Informe o endereço onde deseja receber seu pedido</p>
         </div>
       </div>
+      <InputForm />
     </FormContainer>
   )
 }

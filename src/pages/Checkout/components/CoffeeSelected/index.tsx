@@ -2,8 +2,11 @@ import { ButtonConfirm, CoffeeContainer, ConfirmRequest } from './styles'
 import { CardsCoffees } from '../CardsCoffees/index'
 import { useContext } from 'react'
 import { CartContext } from '../../../../context/CartContex'
+import { formatMoney } from '../../../../utils/formatMoney'
 export function CoffeeSelected() {
-  const { cartItem } = useContext(CartContext)
+  const { cartItem, cartItemsTotal } = useContext(CartContext)
+
+  const totalPay = formatMoney(cartItemsTotal + 3.5)
 
   return (
     <>
@@ -15,7 +18,7 @@ export function CoffeeSelected() {
         <ConfirmRequest>
           <div>
             <span>Total de itens</span>
-            <span>R$ 19,00</span>
+            <span>R$ {cartItemsTotal.toFixed(2)}</span>
           </div>
           <div>
             <span>Entrega</span>
@@ -23,7 +26,7 @@ export function CoffeeSelected() {
           </div>
           <div>
             <strong>Total</strong>
-            <strong>R$ 21,00</strong>
+            <strong>R$ {totalPay}</strong>
           </div>
         </ConfirmRequest>
 
