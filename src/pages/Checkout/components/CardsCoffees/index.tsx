@@ -1,12 +1,12 @@
 import { CoffeeContainer, ButonContainer, ButtonDelete } from './styles'
 import { ButtonIncrement } from '../../../../components/ButtonIncrement/index'
-import { CoffeeCardProps } from '../../../Home/CardCoffee/index'
+import { Coffee } from '../../../Home/CardCoffee/'
 import { Trash } from 'phosphor-react'
 import { useContext } from 'react'
 import { CartContext } from '../../../../context/CartContex'
 import { formatMoney } from '../../../../utils/formatMoney'
 
-interface CoffeeItem extends CoffeeCardProps {
+interface CoffeeItem extends Coffee {
   quantity: number
 }
 
